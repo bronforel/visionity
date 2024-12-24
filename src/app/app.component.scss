@@ -1,0 +1,24 @@
+block-items {
+    box-sizing: border-box;
+    width:100%;
+}
+
+app-block-items {
+    position: relative;
+    z-index: 10;;
+}
+
+app-logopanel {
+    position: relative;
+    z-index: 20;;
+}
+
+.features-panel {
+    position: relative;
+    z-index: 30;
+}
+
+app-scroll-to-top {
+    position: relative;
+    z-index:40;
+}

@@ -1,0 +1,13 @@
+<div class="block-item" [class.fullscreen]="isSelected">
+    
+    <!-- Content-->
+    <div class="block-item-content">
+        <div class="block-header">
+            <div class="block-icon">
+                <fa-icon [icon]="faIcon"></fa-icon>
+            </div>
+            <h2  class="block-title">{{blockItem?.blockTitle}}</h2>
+        </div>
+        <p class="block-description">{{blockItem?.blockDescription}}</p>
+    </div>
+</div>

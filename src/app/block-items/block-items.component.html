@@ -1,0 +1,16 @@
+<img class="image-overlay" 
+    [class.fade]="isFading" 
+    (transitionend)="onTransitionEnd()"
+    [src]="'images/' + selectedBackgroundImage" 
+    *ngIf="selectedBackgroundImage" />
+
+<div class="block-items">
+    <app-block-item *ngFor="let blockItem of blockItems" 
+        [blockItem]="blockItem"
+        [class.fullscreen]="blockItem.blockID === selectedBlockId"
+        [isSelected]="blockItem.blockID === selectedBlockId" 
+        (click)="gotoFeature(blockItem)"
+        (mouseover)="toggleBlockHover(blockItem)"  
+        (mouseleave)="toggleBlockHover()">
+    </app-block-item>
+</div>
